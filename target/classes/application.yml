@@ -1,0 +1,31 @@
+myProps: #自定义的属性和值  
+  port: 8080 
+  arrayProps: 1,2,3,4,5  
+  listMapProps:  
+    - name: abc  
+      value: abcValue  
+    - name: efg  
+      value: efgValue  
+  listProps:  
+    - config2Value1  
+    - config2Vavlue2  
+  mapProps:  
+    key1: value1  
+    key2: value2  
+    
+#SPRING PROFILES  
+spring:         
+  #HTTP ENCODING  
+  http:  
+    encoding.charset: UTF-8  
+    encoding.enable: true  
+    encoding.force: true  
+  mvc:
+    view.prefix: /WEB-INF/jsp/
+    view.suffix: .jsp
+  #DATASOURCE  
+  datasource:  
+    driverClass: com.mysql.jdbc.Driver  
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8  
+    username: root  
+    password: root 
